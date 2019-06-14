@@ -1,5 +1,29 @@
 # 2019 年 6 月 13 日 17:28:59 更新
 
+1. 把项目拉到本地文件夹下 -- 注意文件夹命名 不要有中文字符 防止报错
+2. 检查 node,gulp 是否安装
+
+- 未安装 node 自行百度 , [gulp 文档](https://www.gulpjs.com.cn/docs/getting-started/)
+
+3. 先全局安装
+
+```
+    npm install --global gulp
+    cnpm install --global gulp
+```
+
+4. 直接 npm install 会自行根据 package.json 中列表安装
+
+5. 安装完毕之后 常用 命令
+
+```
+    gulp del  --------------  手动删除 编译到 dist下的所有文件
+
+    gulp --------------------   默认打包压缩 最后上线前 dist目录
+
+    gulp serve  -----------------  调试命令 自动打开调试界面 监听app下所有文件变化实时更新到浏览器 -- 支持多个设备同时同步预览
+```
+
 ---
 
 [参考链接--博客园](https://www.cnblogs.com/cckui/p/10913040.html)
