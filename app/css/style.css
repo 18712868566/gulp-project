@@ -128,7 +128,7 @@ a.gp0 img, a.as0 img { width: 100%; height: 100%; }
     from { bottom: 0.5rem; opacity: 1; }
     to { bottom: 0rem; opacity: 0.1; }
 }
-.rightan { -webkit-animation: rightan 1.5s infinite; -webkit-animation-fill-mode: both; }
+.rightan { -webkit-animation: rightan 1.5s infinite; -webkit-animation-fill-mode: both;}
 
 /* ==============page2============ */
 .tit2 { width: 3.16rem; height: 1.03rem; background: url(../images/FreshmenRecruitment.png) no-repeat 0 0; background-size: 3.16rem; height: 1.03rem; margin: 1.35rem 0 0 0.2rem; }
@@ -317,7 +317,7 @@ a.gp0 img, a.as0 img { width: 100%; height: 100%; }
 .zhangjie { width: 2.7rem; height: 0.9rem; background: url(../images/page7/zhangjie.png) no-repeat 0 0; background-size: 2.7rem 0.9rem; left: 50%; top: 8rem; transform: translate(-50%, 0); }
 
 /* ========page8====== */
-.page8 .line { width: 6.97rem; height: 0.04rem; margin: 0 auto }
+.page8 .line { width: 6.97rem; height: 0.04rem; margin: 0 auto; }
 .page8 .line img { width: 100%; display: block; }
 .tit8 { width: 3.82rem; height: 0.51rem; background: url(../images/page8/tit8.png) no-repeat 0 0; background-size: 3.82rem 0.51rem; margin: 1.5rem auto 0rem; }
 .page8 .tablist { position: relative; padding: 0.2rem 0; text-align: center; }

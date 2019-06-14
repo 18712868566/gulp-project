@@ -27,6 +27,9 @@ const pngquant = require('imagemin-pngquant');
 var del = require('del'); // 下面两个就是在管道中 进行文件删除操作
 var vinylPaths = require('vinyl-paths');
 
+// font字体压缩
+var fontSpider = require('gulp-font-spider');
+
 var config = {
     src: './app',
     src_css: './app/css',
@@ -165,8 +168,12 @@ gulp.task('copy-layer', function() {
  */
 gulp.task('copy-font', function() {
     return gulp
-        .src([config.src + '/font/**/*.*'])
+        .src([config.src + '/font/*.*'])
         .pipe(gulp.dest(config.build + '/font'));
+});
+
+gulp.task('fontspider', function() {
+    return gulp.src(config.src + '/*.html').pipe(fontSpider());
 });
 
 /**
@@ -176,6 +183,7 @@ gulp.task(
     'default',
     gulp.series(
         'del',
+        'fontspider',
         gulp.parallel('css', 'js', 'min-img', 'copy-layer', 'copy-font'),
         'testHtmlmin',
         done => {
