@@ -35,6 +35,9 @@ type null>.babelrc
 这种方式和第一种类似，也可以查看 jquery 所有的版本，
 但是能查出更多的关于 jquery 的信息；
 
+安装指定版本包
+npm install --save-dev jquery@1.0.0
+
 ```
 npm install --save-dev gulp browser-sync gulp-autoprefixer gulp-clean-css gulp-stylus gulp-concat gulp-uglify gulp-htmlmin gulp-rev gulp-rev-collector gulp-imagemin imagemin-pngquant gulp-clean run-sequence del vinyl-paths
 
